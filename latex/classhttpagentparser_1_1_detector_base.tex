@@ -1,0 +1,244 @@
+\hypertarget{classhttpagentparser_1_1_detector_base}{}\section{httpagentparser.\+Detector\+Base Class Reference}
+\label{classhttpagentparser_1_1_detector_base}\index{httpagentparser.\+Detector\+Base@{httpagentparser.\+Detector\+Base}}
+Inheritance diagram for httpagentparser.\+Detector\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classhttpagentparser_1_1_detector_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classhttpagentparser_1_1_detector_base_aa88a09548fa28a9ff529bb5a844d992a}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classhttpagentparser_1_1_detector_base_ab36e580d28b952b6a56b2eddeea5d845}{detect} (self, agent, result)
+\item 
+def \hyperlink{classhttpagentparser_1_1_detector_base_a77173ed8507f7d27538e7ccaced1473f}{check\+Words} (self, agent)
+\item 
+def \hyperlink{classhttpagentparser_1_1_detector_base_a06cd51717213a696fd3c096de2a0ed3c}{get\+Version} (self, agent, word)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhttpagentparser_1_1_detector_base_a7895d7f0a2aae86cb5381e74cb1a413e}{name}
+\item 
+\hyperlink{classhttpagentparser_1_1_detector_base_a5b6f87414a82c136adf833031f013593}{can\+\_\+register}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classhttpagentparser_1_1_detector_base_ab5f0a41981b98396b593d44a981a77bc}{name} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{classhttpagentparser_1_1_detector_base_a46d36e7cd15f3d1208548ba393826a22}{info\+\_\+type} = \char`\"{}override me\char`\"{}
+\item 
+string \hyperlink{classhttpagentparser_1_1_detector_base_a57798e45a12c271cb5de4a1ee64a5b7e}{result\+\_\+key} = \char`\"{}override me\char`\"{}
+\item 
+int \hyperlink{classhttpagentparser_1_1_detector_base_a92853159921546e362d2b1bd08856d04}{order} = 10
+\item 
+string \hyperlink{classhttpagentparser_1_1_detector_base_a4587aa94d3e88cc0514265d11cc1ea40}{look\+\_\+for} = \char`\"{}string to look for\char`\"{}
+\item 
+list \hyperlink{classhttpagentparser_1_1_detector_base_afcd60add7ac675edd91e88556324beb5}{skip\+\_\+if\+\_\+found} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \hyperlink{classhttpagentparser_1_1_detector_base_a1d3e4527904af7d8f4ddb31b7a4d13ce}{can\+\_\+register} = False
+\item 
+list \hyperlink{classhttpagentparser_1_1_detector_base_a224d3758620f1ad7fe4eb01d93f871ae}{version\+\_\+markers} = \mbox{[}(\char`\"{}/\char`\"{}, \char`\"{} \char`\"{})\mbox{]}
+\item 
+bool \hyperlink{classhttpagentparser_1_1_detector_base_a6e4db0b56bf17e62aa020691b3ed50c2}{allow\+\_\+space\+\_\+in\+\_\+version} = False
+\item 
+\hyperlink{classhttpagentparser_1_1_detector_base_a840ab673244412b0322624cfb778efad}{platform} = None
+\item 
+bool \hyperlink{classhttpagentparser_1_1_detector_base_a4bf468cc9b57354739b6c3dab7d24ef8}{bot} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 40 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhttpagentparser_1_1_detector_base_aa88a09548fa28a9ff529bb5a844d992a}{}\label{classhttpagentparser_1_1_detector_base_aa88a09548fa28a9ff529bb5a844d992a} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def httpagentparser.\+Detector\+Base.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhttpagentparser_1_1_detector_base_a77173ed8507f7d27538e7ccaced1473f}{}\label{classhttpagentparser_1_1_detector_base_a77173ed8507f7d27538e7ccaced1473f} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!check\+Words@{check\+Words}}
+\index{check\+Words@{check\+Words}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{check\+Words()}{checkWords()}}
+{\footnotesize\ttfamily def httpagentparser.\+Detector\+Base.\+check\+Words (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{agent }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_ab36e580d28b952b6a56b2eddeea5d845}{}\label{classhttpagentparser_1_1_detector_base_ab36e580d28b952b6a56b2eddeea5d845} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!detect@{detect}}
+\index{detect@{detect}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{detect()}{detect()}}
+{\footnotesize\ttfamily def httpagentparser.\+Detector\+Base.\+detect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{agent,  }\item[{}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a06cd51717213a696fd3c096de2a0ed3c}{}\label{classhttpagentparser_1_1_detector_base_a06cd51717213a696fd3c096de2a0ed3c} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{get\+Version()}{getVersion()}}
+{\footnotesize\ttfamily def httpagentparser.\+Detector\+Base.\+get\+Version (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{agent,  }\item[{}]{word }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}=> version string /None
+\end{DoxyVerb}
+ 
+
+Definition at line 84 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classhttpagentparser_1_1_detector_base_a6e4db0b56bf17e62aa020691b3ed50c2}{}\label{classhttpagentparser_1_1_detector_base_a6e4db0b56bf17e62aa020691b3ed50c2} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!allow\+\_\+space\+\_\+in\+\_\+version@{allow\+\_\+space\+\_\+in\+\_\+version}}
+\index{allow\+\_\+space\+\_\+in\+\_\+version@{allow\+\_\+space\+\_\+in\+\_\+version}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{allow\+\_\+space\+\_\+in\+\_\+version}{allow\_space\_in\_version}}
+{\footnotesize\ttfamily bool httpagentparser.\+Detector\+Base.\+allow\+\_\+space\+\_\+in\+\_\+version = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 49 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a4bf468cc9b57354739b6c3dab7d24ef8}{}\label{classhttpagentparser_1_1_detector_base_a4bf468cc9b57354739b6c3dab7d24ef8} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!bot@{bot}}
+\index{bot@{bot}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{bot}{bot}}
+{\footnotesize\ttfamily bool httpagentparser.\+Detector\+Base.\+bot = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 52 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a1d3e4527904af7d8f4ddb31b7a4d13ce}{}\label{classhttpagentparser_1_1_detector_base_a1d3e4527904af7d8f4ddb31b7a4d13ce} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!can\+\_\+register@{can\+\_\+register}}
+\index{can\+\_\+register@{can\+\_\+register}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{can\+\_\+register}{can\_register}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool httpagentparser.\+Detector\+Base.\+can\+\_\+register = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 47 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a5b6f87414a82c136adf833031f013593}{}\label{classhttpagentparser_1_1_detector_base_a5b6f87414a82c136adf833031f013593} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!can\+\_\+register@{can\+\_\+register}}
+\index{can\+\_\+register@{can\+\_\+register}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{can\+\_\+register}{can\_register}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily httpagentparser.\+Detector\+Base.\+can\+\_\+register}
+
+
+
+Definition at line 57 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a46d36e7cd15f3d1208548ba393826a22}{}\label{classhttpagentparser_1_1_detector_base_a46d36e7cd15f3d1208548ba393826a22} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!info\+\_\+type@{info\+\_\+type}}
+\index{info\+\_\+type@{info\+\_\+type}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{info\+\_\+type}{info\_type}}
+{\footnotesize\ttfamily string httpagentparser.\+Detector\+Base.\+info\+\_\+type = \char`\"{}override me\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 42 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a4587aa94d3e88cc0514265d11cc1ea40}{}\label{classhttpagentparser_1_1_detector_base_a4587aa94d3e88cc0514265d11cc1ea40} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!look\+\_\+for@{look\+\_\+for}}
+\index{look\+\_\+for@{look\+\_\+for}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{look\+\_\+for}{look\_for}}
+{\footnotesize\ttfamily string httpagentparser.\+Detector\+Base.\+look\+\_\+for = \char`\"{}string to look for\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 45 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_ab5f0a41981b98396b593d44a981a77bc}{}\label{classhttpagentparser_1_1_detector_base_ab5f0a41981b98396b593d44a981a77bc} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!name@{name}}
+\index{name@{name}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{name}{name}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string httpagentparser.\+Detector\+Base.\+name = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 41 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a7895d7f0a2aae86cb5381e74cb1a413e}{}\label{classhttpagentparser_1_1_detector_base_a7895d7f0a2aae86cb5381e74cb1a413e} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!name@{name}}
+\index{name@{name}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{name}{name}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily httpagentparser.\+Detector\+Base.\+name}
+
+
+
+Definition at line 56 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a92853159921546e362d2b1bd08856d04}{}\label{classhttpagentparser_1_1_detector_base_a92853159921546e362d2b1bd08856d04} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!order@{order}}
+\index{order@{order}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{order}{order}}
+{\footnotesize\ttfamily int httpagentparser.\+Detector\+Base.\+order = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 44 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a840ab673244412b0322624cfb778efad}{}\label{classhttpagentparser_1_1_detector_base_a840ab673244412b0322624cfb778efad} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!platform@{platform}}
+\index{platform@{platform}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{platform}{platform}}
+{\footnotesize\ttfamily httpagentparser.\+Detector\+Base.\+platform = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 51 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a57798e45a12c271cb5de4a1ee64a5b7e}{}\label{classhttpagentparser_1_1_detector_base_a57798e45a12c271cb5de4a1ee64a5b7e} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!result\+\_\+key@{result\+\_\+key}}
+\index{result\+\_\+key@{result\+\_\+key}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{result\+\_\+key}{result\_key}}
+{\footnotesize\ttfamily string httpagentparser.\+Detector\+Base.\+result\+\_\+key = \char`\"{}override me\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 43 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_afcd60add7ac675edd91e88556324beb5}{}\label{classhttpagentparser_1_1_detector_base_afcd60add7ac675edd91e88556324beb5} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!skip\+\_\+if\+\_\+found@{skip\+\_\+if\+\_\+found}}
+\index{skip\+\_\+if\+\_\+found@{skip\+\_\+if\+\_\+found}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{skip\+\_\+if\+\_\+found}{skip\_if\_found}}
+{\footnotesize\ttfamily list httpagentparser.\+Detector\+Base.\+skip\+\_\+if\+\_\+found = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 46 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+\hypertarget{classhttpagentparser_1_1_detector_base_a224d3758620f1ad7fe4eb01d93f871ae}{}\label{classhttpagentparser_1_1_detector_base_a224d3758620f1ad7fe4eb01d93f871ae} 
+\index{httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}!version\+\_\+markers@{version\+\_\+markers}}
+\index{version\+\_\+markers@{version\+\_\+markers}!httpagentparser\+::\+Detector\+Base@{httpagentparser\+::\+Detector\+Base}}
+\subsubsection{\texorpdfstring{version\+\_\+markers}{version\_markers}}
+{\footnotesize\ttfamily list httpagentparser.\+Detector\+Base.\+version\+\_\+markers = \mbox{[}(\char`\"{}/\char`\"{}, \char`\"{} \char`\"{})\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 48 of file \+\_\+\+\_\+init\+\_\+\+\_\+.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/petertix/\+Desktop/\+I\+M\+L/\+S\+D\+L/questionable/python/httpagentparser/httpagentparser/\hyperlink{____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}\end{DoxyCompactItemize}
